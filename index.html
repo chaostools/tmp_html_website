@@ -1,296 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
+  <head>
+    <meta charset="UTF-8" />
     <title>Quadex</title>
-    <link rel="shortcut icon" href="assets/img/tab_icon.png">
+    <!-- =============== META =============== -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="shortcut icon" href="img/favicon.png" />
+    <link rel="stylesheet" href="css/reset.css" />
 
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">     <!-- ?WHAT'S THIS META? -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    />
+    <link rel="stylesheet" href="css/bootstrap-grid.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-    <link rel="stylesheet" href="assets/css/critical.css">
-    <link rel="stylesheet" href="assets/slick/slick.css">
-    <link rel="stylesheet" href="assets/css/bootstrap-grid.css">
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
-
-</head>
-
-<body>
-
-<!--=============== HEADER (NAV BAR) ===============-->
-<header class="header">
-    <div class="container">
-        <a href="http://abc.xyz/" class="nav-btn">
-            <span></span>
-            <span></span>
-            <span></span>
+  <body id="home" class="home" style="background-image: url(img/bg-body.svg);">
+    <header class="header">
+      <div class="container">
+        <a href="#" class="nav-btn">
+          <span></span>
+          <span></span>
+          <span></span>
         </a>
         <div class="row align-items-center">
-            <!--=============== LOGO ===============-->
-            <div class="col-12 col-sm-6 col-lg-3 logo-item">
-                <a href="http://abc.xyz/" class="logo">
-                    <img src="assets/img/logo.svg" alt="logo">
+          <div class="col-12 col-sm-6 col-lg-3 logo-item">
+            <a href="index.html" class="logo"
+              ><img src="img/logo.svg" alt="logo"
+            /></a>
+          </div>
+          <div class="col-6 nav-cover">
+            <nav class="nav">
+              <ul class="nav-items">
+                <li class="active">
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <a href="#">About us</a>
+                </li>
+                <li class="dropdown">
+                  <a href="#"
+                    >pages <i class="fa fa-angle-down" aria-hidden="true"></i
+                  ></a>
+                  <ul>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Pravicy policy</a></li>
+                    <li><a href="#">404</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contacts</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <ul class="header-icon">
+              <li class="search">
+                <a class="icon" href="#">
+                  <i class="fa fa-search" aria-hidden="true"></i>
                 </a>
-            </div>
-            <!--============= LOGO END =============-->
-            <div class="col-6 nav-menu-cover">
-                <!--============= NAV MENU =============-->
-                <nav class="nav-menu">
-                    <ul class="nav-list">
-                        <li class="active">
-                            <a href="http://abc.xyz/">Home</a>
-                        </li>
-                        <li>
-                            <a href="http://abc.xyz/about.html">About us</a>
-                        </li>
-                        <li class="dropdown">
-                            <a>pages <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-                            <ul>
-                                <li><a href="http://abc.xyz/services.html">Services</a></li>
-                                <li><a href="http://abc.xyz/blog.html">News</a></li>
-                                <li><a href="http://abc.xyz/pravicy-policy.html">Pravicy policy</a></li>
-                                <li><a href="http://abc.xyz/404.html">404</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="http://abc.xyz/shop.html">Shop</a></li>
-                        <li><a href="http://abc.xyz/gallery.html">Gallery</a></li>
-                        <li><a href="http://abc.xyz/contacts.html">Contacts</a></li>
-                    </ul>
-                </nav>
-                <!--=========== NAV MENU END ===========-->
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-                <!--============ HEADER ICON ============-->
-                <ul class="header-icon">
-                    <li class="search">
-                        <a class="icon" href="http://abc.xyz/#">
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                        </a>
-                        <form action="http://abc.xyz/#">
-                            <input type="search" name="search" placeholder="Search">
-                            <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-                        </form>
-                    </li>
-                    <li class="favorites">
-                        <a class="icon" href="http://abc.xyz/#">
-                            <i class="fa fa-heart" aria-hidden="true"></i>
-                            <span>2</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="icon" href="http://abc.xyz/#">
-                            <i class="fa fa-user" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="icon" href="http://abc.xyz/#">
-                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                </ul>
-                <!--========== HEADER ICON END ==========-->
-            </div>
+                <form action="#">
+                  <input type="search" name="search" placeholder="Search" />
+                  <button type="submit">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </button>
+                </form>
+              </li>
+              <li class="favorites">
+                <a class="icon" href="#">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                  <span>2</span>
+                </a>
+              </li>
+              <li>
+                <a class="icon" href="#">
+                  <i class="fa fa-user" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a class="icon" href="#">
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </div>
-</header>
+      </div>
+    </header>
 
-<!-- =============== MAIN CONTENT =============== -->
-
-<main>
-    <!--=============== MAIN SLIDER ===============-->
     <section class="main-slider-cover">
-        <div class="main-slider">
-            <div class="main-slider-for slick-initialized slick-slider">
-                <div aria-live="polite" class="slick-list draggable">
-                    <div class="slick-track" style="opacity: 1; width: 5396px; " role="listbox">
-                        <div class="main-slide-for slick-slide slick-current slick-active" data-slick-index="0"
-                             aria-hidden="false"
-                             style="width: 1349px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1; "
-                             tabindex="-1" role="option" aria-describedby="slick-slide00">
-                            <img src="assets/img/home1-slide10.jpg" alt="">
-                            <div class="container">
-                                <div class="slide-info">
-                                    <h3>will change your world!</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque eaque ut ad
-                                        aliquam, alias voluptatem!</p>
-                                    <a href="https://html.rovadex.com/html-quadex/gallery.html" tabindex="0">read
-                                        more</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="main-slide-for slick-slide" data-slick-index="1" aria-hidden="true"
-                             style="width: 1349px; position: relative; left: -1349px; top: 0px; z-index: 998; opacity: 0; "
-                             tabindex="-1" role="option" aria-describedby="slick-slide01">
-                            <img src="assets/img/home1-slide4.jpg" alt="">
-                            <div class="container">
-                                <div class="slide-info">
-                                    <h3>Let's start creating photos</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmmpor
-                                        incididunt ut labore et dolore magna aliqua.</p>
-                                    <a href="https://html.rovadex.com/html-quadex/gallery.html" tabindex="-1">read
-                                        more</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="main-slide-for slick-slide" data-slick-index="2" aria-hidden="true"
-                             style="width: 1349px; position: relative; left: -2698px; top: 0px; z-index: 998; opacity: 0; "
-                             tabindex="-1" role="option" aria-describedby="slick-slide02">
-                            <img src="assets/img/home1-slide5.jpg" alt="">
-                            <div class="container">
-                                <div class="slide-info">
-                                    <h3>Unique digital experiences</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque eaque ut ad
-                                        aliquam, alias voluptatem!</p>
-                                    <a href="https://html.rovadex.com/html-quadex/gallery.html" tabindex="-1">read
-                                        more</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="main-slide-for slick-slide" data-slick-index="3" aria-hidden="true"
-                             style="width: 1349px; position: relative; left: -4047px; top: 0; z-index: 998; opacity: 0; "
-                             tabindex="-1" role="option" aria-describedby="slick-slide03">
-                            <img src="assets/img/home1-slide12.jpg" alt="">
-                            <div class="container">
-                                <div class="slide-info">
-                                    <h3>will change your world!</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque eaque ut ad
-                                        aliquam, alias voluptatem!</p>
-                                    <a href="https://html.rovadex.com/html-quadex/gallery.html" tabindex="-1">read
-                                        more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
+      <div class="main-slider">
+        <div class="main-slider-for">
+          <div class="main-slide-for">
+            <img src="img/home1-slide10.jpg" alt="" />
+            <div class="container">
+              <div class="slide-info">
+                <h3>will change your world!</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Doloremque eaque ut ad aliquam, alias voluptatem!
+                </p>
+                <a href="gallery.html">read more</a>
+              </div>
             </div>
-
-            <div class="main-slider-nav slick-initialized slick-slider"><span class="slick-arrow-prev slick-arrow"
-                                                                              style="display: block; "><i
-                    class="fa fa-angle-left" aria-hidden="true"></i></span>
-                <div aria-live="polite" class="slick-list draggable">
-                    <div class="slick-track"
-                         style="opacity: 1; width: 2000px; transform: translate3d(-600px, 0px, 0px); " role="listbox">
-                        <div class="main-slide-nav slick-slide slick-cloned" data-slick-index="-3" aria-hidden="true"
-                             style="width: 200px; " tabindex="-1">
-                            <span>2</span>
-                            <div class="img-cover">
-                                <img src="assets/img/home1-slide4.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="main-slide-nav slick-slide slick-cloned" data-slick-index="-2" aria-hidden="true"
-                             style="width: 200px; " tabindex="-1">
-                            <span>3</span>
-                            <div class="img-cover">
-                                <img src="assets/img/home1-slide5.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="main-slide-nav slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true"
-                             style="width: 200px; " tabindex="-1">
-                            <span>4</span>
-                            <div class="img-cover">
-                                <img src="assets/img/home1-slide12.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="main-slide-nav slick-slide slick-current slick-active" data-slick-index="0"
-                             aria-hidden="false" style="width: 200px; " tabindex="-1" role="option"
-                             aria-describedby="slick-slide10">
-                            <span>1</span>
-                            <div class="img-cover">
-                                <img src="assets/img/home1-slide10.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="main-slide-nav slick-slide slick-active" data-slick-index="1" aria-hidden="false"
-                             style="width: 200px; " tabindex="-1" role="option" aria-describedby="slick-slide11">
-                            <span>2</span>
-                            <div class="img-cover">
-                                <img src="assets/img/home1-slide4.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="main-slide-nav slick-slide slick-active" data-slick-index="2" aria-hidden="false"
-                             style="width: 200px; " tabindex="-1" role="option" aria-describedby="slick-slide12">
-                            <span>3</span>
-                            <div class="img-cover">
-                                <img src="assets/img/home1-slide5.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="main-slide-nav slick-slide" data-slick-index="3" aria-hidden="true"
-                             style="width: 200px; " tabindex="-1" role="option" aria-describedby="slick-slide13">
-                            <span>4</span>
-                            <div class="img-cover">
-                                <img src="assets/img/home1-slide12.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="main-slide-nav slick-slide slick-cloned" data-slick-index="4" aria-hidden="true"
-                             style="width: 200px; " tabindex="-1">
-                            <span>1</span>
-                            <div class="img-cover">
-                                <img src="assets/img/home1-slide10.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="main-slide-nav slick-slide slick-cloned" data-slick-index="5" aria-hidden="true"
-                             style="width: 200px; " tabindex="-1">
-                            <span>2</span>
-                            <div class="img-cover">
-                                <img src="assets/img/home1-slide4.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="main-slide-nav slick-slide slick-cloned" data-slick-index="6" aria-hidden="true"
-                             style="width: 200px; " tabindex="-1">
-                            <span>3</span>
-                            <div class="img-cover">
-                                <img src="assets/img/home1-slide5.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <span class="slick-arrow-next slick-arrow" style="display: block; "><i class="fa fa-angle-right"
-                                                                                       aria-hidden="true"></i></span>
+          </div>
+          <div class="main-slide-for">
+            <img src="img/home1-slide4.jpg" alt="" />
+            <div class="container">
+              <div class="slide-info">
+                <h3>Let's start creating photos</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmmpor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a href="gallery.html">read more</a>
+              </div>
             </div>
+          </div>
+          <div class="main-slide-for">
+            <img src="img/home1-slide5.jpg" alt="" />
+            <div class="container">
+              <div class="slide-info">
+                <h3>Unique digital experiences</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Doloremque eaque ut ad aliquam, alias voluptatem!
+                </p>
+                <a href="gallery.html">read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="main-slide-for">
+            <img src="img/home1-slide12.jpg" alt="" />
+            <div class="container">
+              <div class="slide-info">
+                <h3>will change your world!</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Doloremque eaque ut ad aliquam, alias voluptatem!
+                </p>
+                <a href="gallery.html">read more</a>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <div class="main-slider-nav">
+          <div class="main-slide-nav">
+            <span>1</span>
+            <div class="img-cover">
+              <img src="img/home1-slide10.jpg" alt="" />
+            </div>
+          </div>
+          <div class="main-slide-nav">
+            <span>2</span>
+            <div class="img-cover">
+              <img src="img/home1-slide4.jpg" alt="" />
+            </div>
+          </div>
+          <div class="main-slide-nav">
+            <span>3</span>
+            <div class="img-cover">
+              <img src="img/home1-slide5.jpg" alt="" />
+            </div>
+          </div>
+          <div class="main-slide-nav">
+            <span>4</span>
+            <div class="img-cover">
+              <img src="img/home1-slide12.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <!--=============== MAIN SLIDER END ===============-->
 
-</main>
-
-
-<!-- styles -->
-<div>
-
-
-    <!-- =============== STYLES =============== -->
-
-
-</div>
-
-
-<div>
-
-    <!-- scripts -->
-
-    <!-- ==============ONLINE LOAD ======================== -->
-
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-
-    <!--=============== SCRIPTS ===============-->
-    <script src="assets/slick/slick.js"></script>
-    <script src="assets/js/rx-lazy.js"></script>
-    <script src="assets/js/scripts.js"></script>
-
-</div>
-
-
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
